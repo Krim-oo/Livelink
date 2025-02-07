@@ -1,0 +1,44 @@
+{
+  "courses": [
+    {
+      "uid": 1,
+      "course_id": "FIN-001",
+      "title": "Introduction to Cost Estimation",
+      "description": "A foundational course covering the basics of cost estimation, including methodologies and best practices.",
+      "type": "online",
+	  "icon": "online.png",
+      "duration": "4 hours",
+      "link": "294721266"
+    },
+    {
+      "uid": 2,
+      "course_id": "FIN-002",
+      "title": "Advanced Project Planning",
+      "description": "An in-depth course focusing on advanced techniques for project planning and scheduling.",
+      "type": "in person",
+      "icon": "classroom.png",
+	  "duration": "2 days",
+      "link": "294721266"
+    },
+    {
+      "uid": 3,
+      "course_id": "FIN-003",
+      "title": "Space Program Risk Management",
+      "description": "Learn about identifying, analyzing, and mitigating risks in space program projects.",
+      "type": "online",
+      "icon": "online.png",
+      "duration": "6 hours",
+      "link": "294721266"
+    },
+    {
+      "uid": 4,
+      "course_id": "FIN-004",
+      "title": "Leadership in Cost Assurance",
+      "description": "A course designed for executives to understand their role in cost assurance and decision-making.",
+      "type": "in person",
+      "icon": "classroom.png",
+	  "duration": "1 day",
+      "link": "294721266"
+    }
+  ]
+}

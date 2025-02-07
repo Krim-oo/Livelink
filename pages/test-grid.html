@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AG Grid Edition</title>
+    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/themes/light.css"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/shoelace-autoloader.js"
+    ></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+      sl-tab-group::part(base),
+      sl-tab-group::part(body),
+      sl-tab-panel {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 h-screen flex flex-col items-center p-6">
+    <!-- Tab Panel Centré -->
+    <sl-tab-group
+      class="h-full max-w-5xl w-full flex flex-col bg-white shadow-lg rounded-lg flex-grow"
+    >
+      <sl-tab slot="nav" panel="general">Édition Complète</sl-tab>
+      <sl-tab slot="nav" panel="custom">Édition par Ligne</sl-tab>
+      <sl-tab slot="nav" panel="advanced">Avancé</sl-tab>
+
+      <!-- Mode édition complète -->
+      <sl-tab-panel name="general" class="px-4 h-full">
+        <div id="gridFullEdit" class="h-[32rem]"></div>
+      </sl-tab-panel>
+
+      <!-- Mode édition par ligne -->
+      <sl-tab-panel name="custom" class="px-4 h-full">
+        <div id="gridRowEdit" class="h-[32rem]"></div>
+      </sl-tab-panel>
+
+      <!-- Mode avancé (Placeholder pour ajout futur) -->
+      <sl-tab-panel name="advanced" class="px-4 h-full">
+        <h2 class="text-xl font-medium my-2">
+          Fonctionnalités Avancées (En cours de développement)
+        </h2>
+        <p class="text-gray-600">
+          Ajoutez ici d'autres fonctionnalités comme export CSV, filtres
+          avancés, etc.
+        </p>
+      </sl-tab-panel>
+    </sl-tab-group>
+    <script src="../scripts/ag-grid.js"></script>
+  </body>
+</html>

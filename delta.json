@@ -1,0 +1,15 @@
+{
+  "ops": [
+    {
+      "insert": "Bonjour, voici un contenu initial chargé depuis un backend fictif.\n"
+    },
+    {
+      "insert": "Ce contenu utilise le format Delta de QuillJS.\n",
+      "attributes": { "bold": true }
+    },
+    {
+      "insert": "Amusez-vous à modifier ce texte !\n",
+      "attributes": { "italic": true }
+    }
+  ]
+}

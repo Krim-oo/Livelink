@@ -1,0 +1,902 @@
+[
+    {
+        "course_id": "COURSE-001",
+        "title": "Advanced Financial Analysis",
+        "description": "An introductory course on the basics of marketing principles.",
+        "type": "offline",
+        "icon": "offline.png",
+        "duration": "4 hours",
+        "link": "356719561"
+    },
+    {
+        "course_id": "COURSE-002",
+        "title": "Python Programming Basics",
+        "description": "Learn the foundations of data science and how to apply them.",
+        "type": "offline",
+        "icon": "online.png",
+        "duration": "1 day",
+        "link": "394098345"
+    },
+    {
+        "course_id": "COURSE-003",
+        "title": "AI and Machine Learning Overview",
+        "description": "An in-depth exploration of key topics in financial analysis.",
+        "type": "offline",
+        "icon": "offline.png",
+        "duration": "2 days",
+        "link": "740571996"
+    },
+    {
+        "course_id": "COURSE-004",
+        "title": "Python Programming Basics",
+        "description": "A broad overview of AI and ML technologies and their applications.",
+        "type": "online",
+        "icon": "hybrid.png",
+        "duration": "1 week",
+        "link": "194281554"
+    },
+    {
+        "course_id": "COURSE-005",
+        "title": "Cybersecurity Essentials",
+        "description": "A step-by-step guide to learning the basics of Python programming.",
+        "type": "offline",
+        "icon": "offline.png",
+        "duration": "1 day",
+        "link": "577903625"
+    },
+    {
+        "course_id": "COURSE-006",
+        "title": "AI and Machine Learning Overview",
+        "description": "An in-depth exploration of key topics in financial analysis.",
+        "type": "online",
+        "icon": "offline.png",
+        "duration": "1 day",
+        "link": "475670397"
+    },
+    {
+        "course_id": "COURSE-007",
+        "title": "Cybersecurity Essentials",
+        "description": "A step-by-step guide to learning the basics of Python programming.",
+        "type": "online",
+        "icon": "online.png",
+        "duration": "1 week",
+        "link": "472722089"
+    },
+    {
+        "course_id": "COURSE-008",
+        "title": "AI and Machine Learning Overview",
+        "description": "A step-by-step guide to learning the basics of Python programming.",
+        "type": "hybrid",
+        "icon": "online.png",
+        "duration": "1 day",
+        "link": "768691985"
+    },
+    {
+        "course_id": "COURSE-009",
+        "title": "Principles of Marketing",
+        "description": "Key principles to improve leadership and manage teams effectively.",
+        "type": "hybrid",
+        "icon": "hybrid.png",
+        "duration": "1 week",
+        "link": "554737060"
+    },
+    {
+        "course_id": "COURSE-010",
+        "title": "Advanced Financial Analysis",
+        "description": "Learn strategies to transform your organization in the digital age.",
+        "type": "offline",
+        "icon": "hybrid.png",
+        "duration": "8 hours",
+        "link": "239277287"
+    },
+    {
+        "course_id": "COURSE-011",
+        "title": "Cybersecurity Essentials",
+        "description": "An in-depth exploration of key topics in financial analysis.",
+        "type": "hybrid",
+        "icon": "offline.png",
+        "duration": "8 hours",
+        "link": "844923850"
+    },
+    {
+        "course_id": "COURSE-012",
+        "title": "Advanced Financial Analysis",
+        "description": "Learn the foundations of data science and how to apply them.",
+        "type": "offline",
+        "icon": "online.png",
+        "duration": "1 day",
+        "link": "371221312"
+    },
+    {
+        "course_id": "COURSE-013",
+        "title": "Principles of Marketing",
+        "description": "An introductory course on the basics of marketing principles.",
+        "type": "online",
+        "icon": "online.png",
+        "duration": "4 hours",
+        "link": "113445745"
+    },
+    {
+        "course_id": "COURSE-014",
+        "title": "Python Programming Basics",
+        "description": "A step-by-step guide to learning the basics of Python programming.",
+        "type": "offline",
+        "icon": "hybrid.png",
+        "duration": "1 day",
+        "link": "977448606"
+    },
+    {
+        "course_id": "COURSE-015",
+        "title": "Advanced Financial Analysis",
+        "description": "A broad overview of AI and ML technologies and their applications.",
+        "type": "offline",
+        "icon": "hybrid.png",
+        "duration": "1 day",
+        "link": "297321056"
+    },
+    {
+        "course_id": "COURSE-016",
+        "title": "Leadership and Team Management",
+        "description": "An in-depth exploration of key topics in financial analysis.",
+        "type": "online",
+        "icon": "hybrid.png",
+        "duration": "8 hours",
+        "link": "442731838"
+    },
+    {
+        "course_id": "COURSE-017",
+        "title": "Digital Transformation Strategies",
+        "description": "A step-by-step guide to learning the basics of Python programming.",
+        "type": "offline",
+        "icon": "online.png",
+        "duration": "1 week",
+        "link": "715514222"
+    },
+    {
+        "course_id": "COURSE-018",
+        "title": "Cybersecurity Essentials",
+        "description": "A broad overview of AI and ML technologies and their applications.",
+        "type": "offline",
+        "icon": "offline.png",
+        "duration": "4 hours",
+        "link": "914945104"
+    },
+    {
+        "course_id": "COURSE-019",
+        "title": "Data Science for Beginners",
+        "description": "An introductory course on the basics of marketing principles.",
+        "type": "offline",
+        "icon": "hybrid.png",
+        "duration": "2 days",
+        "link": "182234368"
+    },
+    {
+        "course_id": "COURSE-020",
+        "title": "Python Programming Basics",
+        "description": "An introductory course on the basics of marketing principles.",
+        "type": "online",
+        "icon": "offline.png",
+        "duration": "8 hours",
+        "link": "882600542"
+    },
+    {
+        "course_id": "COURSE-021",
+        "title": "Leadership and Team Management",
+        "description": "An introductory course on the basics of marketing principles.",
+        "type": "online",
+        "icon": "hybrid.png",
+        "duration": "1 week",
+        "link": "261352376"
+    },
+    {
+        "course_id": "COURSE-022",
+        "title": "Advanced Financial Analysis",
+        "description": "An introductory course on the basics of marketing principles.",
+        "type": "hybrid",
+        "icon": "offline.png",
+        "duration": "2 days",
+        "link": "243719776"
+    },
+    {
+        "course_id": "COURSE-023",
+        "title": "Cybersecurity Essentials",
+        "description": "Essential concepts and practices to secure digital systems.",
+        "type": "hybrid",
+        "icon": "hybrid.png",
+        "duration": "1 week",
+        "link": "558093484"
+    },
+    {
+        "course_id": "COURSE-024",
+        "title": "Leadership and Team Management",
+        "description": "Key principles to improve leadership and manage teams effectively.",
+        "type": "online",
+        "icon": "hybrid.png",
+        "duration": "8 hours",
+        "link": "590003448"
+    },
+    {
+        "course_id": "COURSE-025",
+        "title": "AI and Machine Learning Overview",
+        "description": "Learn the foundations of data science and how to apply them.",
+        "type": "offline",
+        "icon": "online.png",
+        "duration": "1 day",
+        "link": "478797972"
+    },
+    {
+        "course_id": "COURSE-026",
+        "title": "Data Science for Beginners",
+        "description": "Essential concepts and practices to secure digital systems.",
+        "type": "online",
+        "icon": "hybrid.png",
+        "duration": "1 day",
+        "link": "645254915"
+    },
+    {
+        "course_id": "COURSE-027",
+        "title": "Principles of Marketing",
+        "description": "Key principles to improve leadership and manage teams effectively.",
+        "type": "online",
+        "icon": "hybrid.png",
+        "duration": "2 days",
+        "link": "342620012"
+    },
+    {
+        "course_id": "COURSE-028",
+        "title": "Data Science for Beginners",
+        "description": "An in-depth exploration of key topics in financial analysis.",
+        "type": "offline",
+        "icon": "online.png",
+        "duration": "8 hours",
+        "link": "760094943"
+    },
+    {
+        "course_id": "COURSE-029",
+        "title": "Principles of Marketing",
+        "description": "Learn the foundations of data science and how to apply them.",
+        "type": "offline",
+        "icon": "hybrid.png",
+        "duration": "1 week",
+        "link": "210143358"
+    },
+    {
+        "course_id": "COURSE-030",
+        "title": "Leadership and Team Management",
+        "description": "Key principles to improve leadership and manage teams effectively.",
+        "type": "offline",
+        "icon": "hybrid.png",
+        "duration": "1 day",
+        "link": "181014151"
+    },
+    {
+        "course_id": "COURSE-031",
+        "title": "Data Science for Beginners",
+        "description": "Learn the foundations of data science and how to apply them.",
+        "type": "offline",
+        "icon": "offline.png",
+        "duration": "8 hours",
+        "link": "977899211"
+    },
+    {
+        "course_id": "COURSE-032",
+        "title": "Advanced Financial Analysis",
+        "description": "Learn the foundations of data science and how to apply them.",
+        "type": "offline",
+        "icon": "online.png",
+        "duration": "2 days",
+        "link": "625289808"
+    },
+    {
+        "course_id": "COURSE-033",
+        "title": "Cybersecurity Essentials",
+        "description": "Essential concepts and practices to secure digital systems.",
+        "type": "hybrid",
+        "icon": "offline.png",
+        "duration": "1 week",
+        "link": "303382843"
+    },
+    {
+        "course_id": "COURSE-034",
+        "title": "Principles of Marketing",
+        "description": "Essential concepts and practices to secure digital systems.",
+        "type": "hybrid",
+        "icon": "online.png",
+        "duration": "2 days",
+        "link": "108079181"
+    },
+    {
+        "course_id": "COURSE-035",
+        "title": "Python Programming Basics",
+        "description": "An introductory course on the basics of marketing principles.",
+        "type": "hybrid",
+        "icon": "hybrid.png",
+        "duration": "2 days",
+        "link": "673410648"
+    },
+    {
+        "course_id": "COURSE-036",
+        "title": "Advanced Financial Analysis",
+        "description": "A step-by-step guide to learning the basics of Python programming.",
+        "type": "hybrid",
+        "icon": "online.png",
+        "duration": "4 hours",
+        "link": "121124738"
+    },
+    {
+        "course_id": "COURSE-037",
+        "title": "Principles of Marketing",
+        "description": "Essential concepts and practices to secure digital systems.",
+        "type": "hybrid",
+        "icon": "online.png",
+        "duration": "2 days",
+        "link": "368070514"
+    },
+    {
+        "course_id": "COURSE-038",
+        "title": "Python Programming Basics",
+        "description": "A step-by-step guide to learning the basics of Python programming.",
+        "type": "offline",
+        "icon": "hybrid.png",
+        "duration": "8 hours",
+        "link": "359551013"
+    },
+    {
+        "course_id": "COURSE-039",
+        "title": "Advanced Financial Analysis",
+        "description": "Learn strategies to transform your organization in the digital age.",
+        "type": "offline",
+        "icon": "online.png",
+        "duration": "1 week",
+        "link": "743141522"
+    },
+    {
+        "course_id": "COURSE-040",
+        "title": "Cybersecurity Essentials",
+        "description": "An in-depth exploration of key topics in financial analysis.",
+        "type": "online",
+        "icon": "offline.png",
+        "duration": "2 days",
+        "link": "303494177"
+    },
+    {
+        "course_id": "COURSE-041",
+        "title": "Advanced Financial Analysis",
+        "description": "Essential concepts and practices to secure digital systems.",
+        "type": "online",
+        "icon": "hybrid.png",
+        "duration": "1 week",
+        "link": "575665009"
+    },
+    {
+        "course_id": "COURSE-042",
+        "title": "Python Programming Basics",
+        "description": "Learn strategies to transform your organization in the digital age.",
+        "type": "offline",
+        "icon": "offline.png",
+        "duration": "8 hours",
+        "link": "389152205"
+    },
+    {
+        "course_id": "COURSE-043",
+        "title": "Cybersecurity Essentials",
+        "description": "Learn the foundations of data science and how to apply them.",
+        "type": "online",
+        "icon": "online.png",
+        "duration": "8 hours",
+        "link": "891703504"
+    },
+    {
+        "course_id": "COURSE-044",
+        "title": "Python Programming Basics",
+        "description": "Learn strategies to transform your organization in the digital age.",
+        "type": "hybrid",
+        "icon": "online.png",
+        "duration": "1 day",
+        "link": "327863165"
+    },
+    {
+        "course_id": "COURSE-045",
+        "title": "Principles of Marketing",
+        "description": "Key principles to improve leadership and manage teams effectively.",
+        "type": "online",
+        "icon": "online.png",
+        "duration": "1 week",
+        "link": "972177641"
+    },
+    {
+        "course_id": "COURSE-046",
+        "title": "AI and Machine Learning Overview",
+        "description": "Essential concepts and practices to secure digital systems.",
+        "type": "hybrid",
+        "icon": "offline.png",
+        "duration": "8 hours",
+        "link": "366657833"
+    },
+    {
+        "course_id": "COURSE-047",
+        "title": "Principles of Marketing",
+        "description": "Essential concepts and practices to secure digital systems.",
+        "type": "online",
+        "icon": "offline.png",
+        "duration": "2 days",
+        "link": "266072434"
+    },
+    {
+        "course_id": "COURSE-048",
+        "title": "Python Programming Basics",
+        "description": "A step-by-step guide to learning the basics of Python programming.",
+        "type": "online",
+        "icon": "hybrid.png",
+        "duration": "1 week",
+        "link": "432764990"
+    },
+    {
+        "course_id": "COURSE-049",
+        "title": "Digital Transformation Strategies",
+        "description": "A step-by-step guide to learning the basics of Python programming.",
+        "type": "online",
+        "icon": "hybrid.png",
+        "duration": "4 hours",
+        "link": "751668461"
+    },
+    {
+        "course_id": "COURSE-050",
+        "title": "Leadership and Team Management",
+        "description": "Learn strategies to transform your organization in the digital age.",
+        "type": "hybrid",
+        "icon": "hybrid.png",
+        "duration": "2 days",
+        "link": "568716465"
+    },
+    {
+        "course_id": "COURSE-051",
+        "title": "Cybersecurity Essentials",
+        "description": "An introductory course on the basics of marketing principles.",
+        "type": "hybrid",
+        "icon": "online.png",
+        "duration": "8 hours",
+        "link": "761006358"
+    },
+    {
+        "course_id": "COURSE-052",
+        "title": "Cybersecurity Essentials",
+        "description": "Learn the foundations of data science and how to apply them.",
+        "type": "offline",
+        "icon": "online.png",
+        "duration": "1 week",
+        "link": "486497458"
+    },
+    {
+        "course_id": "COURSE-053",
+        "title": "Leadership and Team Management",
+        "description": "Essential concepts and practices to secure digital systems.",
+        "type": "offline",
+        "icon": "online.png",
+        "duration": "1 day",
+        "link": "625647882"
+    },
+    {
+        "course_id": "COURSE-054",
+        "title": "Advanced Financial Analysis",
+        "description": "An in-depth exploration of key topics in financial analysis.",
+        "type": "offline",
+        "icon": "hybrid.png",
+        "duration": "2 days",
+        "link": "702564533"
+    },
+    {
+        "course_id": "COURSE-055",
+        "title": "Python Programming Basics",
+        "description": "An introductory course on the basics of marketing principles.",
+        "type": "offline",
+        "icon": "hybrid.png",
+        "duration": "8 hours",
+        "link": "916012201"
+    },
+    {
+        "course_id": "COURSE-056",
+        "title": "Leadership and Team Management",
+        "description": "An in-depth exploration of key topics in financial analysis.",
+        "type": "offline",
+        "icon": "online.png",
+        "duration": "4 hours",
+        "link": "746527879"
+    },
+    {
+        "course_id": "COURSE-057",
+        "title": "AI and Machine Learning Overview",
+        "description": "A broad overview of AI and ML technologies and their applications.",
+        "type": "offline",
+        "icon": "online.png",
+        "duration": "2 days",
+        "link": "707171968"
+    },
+    {
+        "course_id": "COURSE-058",
+        "title": "AI and Machine Learning Overview",
+        "description": "Learn strategies to transform your organization in the digital age.",
+        "type": "hybrid",
+        "icon": "online.png",
+        "duration": "1 week",
+        "link": "503478495"
+    },
+    {
+        "course_id": "COURSE-059",
+        "title": "Python Programming Basics",
+        "description": "An introductory course on the basics of marketing principles.",
+        "type": "hybrid",
+        "icon": "offline.png",
+        "duration": "1 day",
+        "link": "609073184"
+    },
+    {
+        "course_id": "COURSE-060",
+        "title": "Leadership and Team Management",
+        "description": "An introductory course on the basics of marketing principles.",
+        "type": "hybrid",
+        "icon": "hybrid.png",
+        "duration": "2 days",
+        "link": "366347950"
+    },
+    {
+        "course_id": "COURSE-061",
+        "title": "Digital Transformation Strategies",
+        "description": "A broad overview of AI and ML technologies and their applications.",
+        "type": "offline",
+        "icon": "online.png",
+        "duration": "8 hours",
+        "link": "549976725"
+    },
+    {
+        "course_id": "COURSE-062",
+        "title": "Advanced Financial Analysis",
+        "description": "Learn the foundations of data science and how to apply them.",
+        "type": "offline",
+        "icon": "offline.png",
+        "duration": "4 hours",
+        "link": "242261851"
+    },
+    {
+        "course_id": "COURSE-063",
+        "title": "Data Science for Beginners",
+        "description": "An introductory course on the basics of marketing principles.",
+        "type": "online",
+        "icon": "online.png",
+        "duration": "1 week",
+        "link": "144822485"
+    },
+    {
+        "course_id": "COURSE-064",
+        "title": "AI and Machine Learning Overview",
+        "description": "An introductory course on the basics of marketing principles.",
+        "type": "hybrid",
+        "icon": "offline.png",
+        "duration": "2 days",
+        "link": "854880515"
+    },
+    {
+        "course_id": "COURSE-065",
+        "title": "Digital Transformation Strategies",
+        "description": "Learn strategies to transform your organization in the digital age.",
+        "type": "hybrid",
+        "icon": "offline.png",
+        "duration": "8 hours",
+        "link": "846052258"
+    },
+    {
+        "course_id": "COURSE-066",
+        "title": "Python Programming Basics",
+        "description": "A broad overview of AI and ML technologies and their applications.",
+        "type": "hybrid",
+        "icon": "offline.png",
+        "duration": "8 hours",
+        "link": "649346518"
+    },
+    {
+        "course_id": "COURSE-067",
+        "title": "Advanced Financial Analysis",
+        "description": "Learn strategies to transform your organization in the digital age.",
+        "type": "hybrid",
+        "icon": "online.png",
+        "duration": "4 hours",
+        "link": "244963623"
+    },
+    {
+        "course_id": "COURSE-068",
+        "title": "Python Programming Basics",
+        "description": "An in-depth exploration of key topics in financial analysis.",
+        "type": "hybrid",
+        "icon": "online.png",
+        "duration": "1 day",
+        "link": "966085035"
+    },
+    {
+        "course_id": "COURSE-069",
+        "title": "AI and Machine Learning Overview",
+        "description": "An in-depth exploration of key topics in financial analysis.",
+        "type": "online",
+        "icon": "online.png",
+        "duration": "4 hours",
+        "link": "880080922"
+    },
+    {
+        "course_id": "COURSE-070",
+        "title": "Leadership and Team Management",
+        "description": "Learn the foundations of data science and how to apply them.",
+        "type": "offline",
+        "icon": "offline.png",
+        "duration": "2 days",
+        "link": "441615726"
+    },
+    {
+        "course_id": "COURSE-071",
+        "title": "Data Science for Beginners",
+        "description": "Learn strategies to transform your organization in the digital age.",
+        "type": "online",
+        "icon": "hybrid.png",
+        "duration": "1 week",
+        "link": "484529844"
+    },
+    {
+        "course_id": "COURSE-072",
+        "title": "Advanced Financial Analysis",
+        "description": "An introductory course on the basics of marketing principles.",
+        "type": "hybrid",
+        "icon": "hybrid.png",
+        "duration": "4 hours",
+        "link": "820301082"
+    },
+    {
+        "course_id": "COURSE-073",
+        "title": "Digital Transformation Strategies",
+        "description": "An in-depth exploration of key topics in financial analysis.",
+        "type": "online",
+        "icon": "online.png",
+        "duration": "1 day",
+        "link": "694036015"
+    },
+    {
+        "course_id": "COURSE-074",
+        "title": "Python Programming Basics",
+        "description": "A broad overview of AI and ML technologies and their applications.",
+        "type": "hybrid",
+        "icon": "offline.png",
+        "duration": "8 hours",
+        "link": "682858104"
+    },
+    {
+        "course_id": "COURSE-075",
+        "title": "Digital Transformation Strategies",
+        "description": "Essential concepts and practices to secure digital systems.",
+        "type": "online",
+        "icon": "hybrid.png",
+        "duration": "1 day",
+        "link": "220605894"
+    },
+    {
+        "course_id": "COURSE-076",
+        "title": "AI and Machine Learning Overview",
+        "description": "A broad overview of AI and ML technologies and their applications.",
+        "type": "online",
+        "icon": "hybrid.png",
+        "duration": "1 week",
+        "link": "894013027"
+    },
+    {
+        "course_id": "COURSE-077",
+        "title": "Principles of Marketing",
+        "description": "Key principles to improve leadership and manage teams effectively.",
+        "type": "online",
+        "icon": "hybrid.png",
+        "duration": "8 hours",
+        "link": "919994432"
+    },
+    {
+        "course_id": "COURSE-078",
+        "title": "Advanced Financial Analysis",
+        "description": "An in-depth exploration of key topics in financial analysis.",
+        "type": "offline",
+        "icon": "hybrid.png",
+        "duration": "1 week",
+        "link": "515841236"
+    },
+    {
+        "course_id": "COURSE-079",
+        "title": "Data Science for Beginners",
+        "description": "A step-by-step guide to learning the basics of Python programming.",
+        "type": "hybrid",
+        "icon": "offline.png",
+        "duration": "1 day",
+        "link": "923012683"
+    },
+    {
+        "course_id": "COURSE-080",
+        "title": "Data Science for Beginners",
+        "description": "An in-depth exploration of key topics in financial analysis.",
+        "type": "online",
+        "icon": "hybrid.png",
+        "duration": "1 week",
+        "link": "277067255"
+    },
+    {
+        "course_id": "COURSE-081",
+        "title": "Principles of Marketing",
+        "description": "Essential concepts and practices to secure digital systems.",
+        "type": "online",
+        "icon": "online.png",
+        "duration": "1 day",
+        "link": "747159578"
+    },
+    {
+        "course_id": "COURSE-082",
+        "title": "Principles of Marketing",
+        "description": "Learn the foundations of data science and how to apply them.",
+        "type": "offline",
+        "icon": "hybrid.png",
+        "duration": "8 hours",
+        "link": "450502225"
+    },
+    {
+        "course_id": "COURSE-083",
+        "title": "Python Programming Basics",
+        "description": "A step-by-step guide to learning the basics of Python programming.",
+        "type": "offline",
+        "icon": "hybrid.png",
+        "duration": "1 week",
+        "link": "819345560"
+    },
+    {
+        "course_id": "COURSE-084",
+        "title": "Advanced Financial Analysis",
+        "description": "Key principles to improve leadership and manage teams effectively.",
+        "type": "offline",
+        "icon": "offline.png",
+        "duration": "8 hours",
+        "link": "802897543"
+    },
+    {
+        "course_id": "COURSE-085",
+        "title": "Advanced Financial Analysis",
+        "description": "A step-by-step guide to learning the basics of Python programming.",
+        "type": "offline",
+        "icon": "online.png",
+        "duration": "1 day",
+        "link": "185960876"
+    },
+    {
+        "course_id": "COURSE-086",
+        "title": "Principles of Marketing",
+        "description": "A step-by-step guide to learning the basics of Python programming.",
+        "type": "online",
+        "icon": "offline.png",
+        "duration": "1 day",
+        "link": "511418723"
+    },
+    {
+        "course_id": "COURSE-087",
+        "title": "Advanced Financial Analysis",
+        "description": "A broad overview of AI and ML technologies and their applications.",
+        "type": "offline",
+        "icon": "offline.png",
+        "duration": "1 week",
+        "link": "157915956"
+    },
+    {
+        "course_id": "COURSE-088",
+        "title": "Data Science for Beginners",
+        "description": "Essential concepts and practices to secure digital systems.",
+        "type": "online",
+        "icon": "online.png",
+        "duration": "1 week",
+        "link": "354339460"
+    },
+    {
+        "course_id": "COURSE-089",
+        "title": "Data Science for Beginners",
+        "description": "Learn the foundations of data science and how to apply them.",
+        "type": "hybrid",
+        "icon": "offline.png",
+        "duration": "4 hours",
+        "link": "900763981"
+    },
+    {
+        "course_id": "COURSE-090",
+        "title": "Data Science for Beginners",
+        "description": "Essential concepts and practices to secure digital systems.",
+        "type": "online",
+        "icon": "online.png",
+        "duration": "8 hours",
+        "link": "596287001"
+    },
+    {
+        "course_id": "COURSE-091",
+        "title": "AI and Machine Learning Overview",
+        "description": "Learn the foundations of data science and how to apply them.",
+        "type": "hybrid",
+        "icon": "online.png",
+        "duration": "1 week",
+        "link": "718297029"
+    },
+    {
+        "course_id": "COURSE-092",
+        "title": "AI and Machine Learning Overview",
+        "description": "Learn the foundations of data science and how to apply them.",
+        "type": "hybrid",
+        "icon": "online.png",
+        "duration": "8 hours",
+        "link": "965548518"
+    },
+    {
+        "course_id": "COURSE-093",
+        "title": "Digital Transformation Strategies",
+        "description": "A step-by-step guide to learning the basics of Python programming.",
+        "type": "online",
+        "icon": "online.png",
+        "duration": "1 week",
+        "link": "399444785"
+    },
+    {
+        "course_id": "COURSE-094",
+        "title": "Leadership and Team Management",
+        "description": "An introductory course on the basics of marketing principles.",
+        "type": "offline",
+        "icon": "hybrid.png",
+        "duration": "8 hours",
+        "link": "188483191"
+    },
+    {
+        "course_id": "COURSE-095",
+        "title": "Data Science for Beginners",
+        "description": "Learn strategies to transform your organization in the digital age.",
+        "type": "hybrid",
+        "icon": "offline.png",
+        "duration": "1 week",
+        "link": "631154817"
+    },
+    {
+        "course_id": "COURSE-096",
+        "title": "Digital Transformation Strategies",
+        "description": "Essential concepts and practices to secure digital systems.",
+        "type": "hybrid",
+        "icon": "offline.png",
+        "duration": "1 day",
+        "link": "129267434"
+    },
+    {
+        "course_id": "COURSE-097",
+        "title": "Cybersecurity Essentials",
+        "description": "Learn strategies to transform your organization in the digital age.",
+        "type": "offline",
+        "icon": "online.png",
+        "duration": "2 days",
+        "link": "511307026"
+    },
+    {
+        "course_id": "COURSE-098",
+        "title": "Advanced Financial Analysis",
+        "description": "Learn strategies to transform your organization in the digital age.",
+        "type": "online",
+        "icon": "online.png",
+        "duration": "1 week",
+        "link": "191889795"
+    },
+    {
+        "course_id": "COURSE-099",
+        "title": "Python Programming Basics",
+        "description": "Learn the foundations of data science and how to apply them.",
+        "type": "online",
+        "icon": "online.png",
+        "duration": "1 day",
+        "link": "250315193"
+    },
+    {
+        "course_id": "COURSE-100",
+        "title": "AI and Machine Learning Overview",
+        "description": "An in-depth exploration of key topics in financial analysis.",
+        "type": "hybrid",
+        "icon": "online.png",
+        "duration": "1 week",
+        "link": "357715928"
+    }
+]

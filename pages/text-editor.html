@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuillJS Text Editor</title>
+    <!-- Inclure les styles de Quill -->
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css"
+      rel="stylesheet"
+    />
+    <style>
+      #editor-container {
+        height: 300px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Éditeur de texte avec QuillJS</h1>
+    <!-- Conteneur de l'éditeur -->
+    <div id="editor-container"></div>
+
+    <button id="save-delta">Télécharger Delta.json</button>
+
+    <script>
+      // Initialiser l'éditeur Quill
+      const quill = new Quill("#editor-container", {
+        theme: "snow",
+      });
+
+      // Simulation d'un appel AJAX pour récupérer le fichier JSON
+      function fetchDeltaFromFile() {
+        return fetch("delta.json") // Charger le fichier JSON
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Erreur lors du chargement du fichier Delta");
+            }
+            return response.json();
+          });
+      }
+
+      // Charger le contenu Delta dans l'éditeur
+      fetchDeltaFromFile()
+        .then((delta) => {
+          quill.setContents(delta);
+        })
+        .catch((error) => {
+          console.error("Erreur :", error);
+        });
+
+      // Bouton pour sauvegarder le fichier Delta
+      document.getElementById("save-delta").addEventListener("click", () => {
+        const delta = quill.getContents(); // Obtenir le Delta actuel
+        const blob = new Blob([JSON.stringify(delta, null, 2)], {
+          type: "application/json",
+        });
+        const a = document.createElement("a");
+        a.href = URL.createObjectURL(blob);
+        a.download = "delta.json"; // Nom du fichier à télécharger
+        a.click();
+        URL.revokeObjectURL(a.href); // Libérer la mémoire
+      });
+    </script>
+  </body>
+</html>
