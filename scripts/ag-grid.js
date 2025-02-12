@@ -19,15 +19,33 @@ const columnDefs = [
     editable: true,
     cellEditor: "agSelectCellEditor",
     cellEditorParams: { values: ["online", "offline", "hybrid"] },
+    minWidth: 120,
+    cellRenderer: (params) => {
+      let icon;
+      switch (params.value) {
+        case "online":
+          icon = "🖥️";
+          break;
+        case "offline":
+          icon = "🏫";
+          break;
+        case "hybrid":
+          icon = "🔄";
+          break;
+        default:
+          icon = "❓";
+      }
+      return `${icon} ${params.value}`;
+    },
   },
-  { field: "icon", headerName: "Icon", editable: true },
   { field: "duration", headerName: "Duration", editable: false },
   {
     field: "link",
     headerName: "Link",
     editable: false,
+    minWidth: 200,
     cellRenderer: (params) =>
-      `<a href="https://example.com/${params.value}" target="_blank">${params.value}</a>`,
+      `<a href="https://example.com/${params.value}" target="_blank" style="color:blue; text-decoration:underline;">${params.value}</a>`,
   },
 ];
 
@@ -38,7 +56,9 @@ const gridOptionsFullEdit = {
     filter: "agTextColumnFilter",
     sortable: true,
   },
+  rowSelection: { mode: "multiRow" },
   pagination: true,
+  onSelectionChanged: updateDeleteButtonState,
   onCellValueChanged: (event) => {
     console.log(
       "Cellule modifiée :",
@@ -73,7 +93,7 @@ function onFilterTextBoxChanged() {
 function initDrawerHandlers() {
   const drawer = document.querySelector(".drawer-overview");
   const openButton = document.querySelector(
-    "sl-button-group sl-button:first-child"
+    "sl-button-group sl-button:nth-child(2)"
   );
   const closeButton = document.getElementById("close-drawer");
 
@@ -85,6 +105,37 @@ function initDrawerHandlers() {
       "Erreur : Impossible d'initialiser les événements du drawer."
     );
   }
+}
+
+function initDeleteHandler() {
+  const deleteButton = document.querySelector(".delete-course");
+
+  if (!deleteButton || !gridApiFull) {
+    console.error("Bouton 'Supprimer' ou gridApiFull non trouvé.");
+    return;
+  }
+
+  deleteButton.addEventListener("click", () => {
+    const selectedData = gridApiFull.getSelectedRows(); // Récupère les lignes sélectionnées
+
+    if (selectedData.length === 0) {
+      alert("Veuillez sélectionner au moins un cours à supprimer.");
+      return;
+    }
+
+    // Supprimer les cours sélectionnés de la grille
+    const res = gridApiFull.applyTransaction({ remove: selectedData });
+
+    console.log("Cours supprimés :", res);
+  });
+}
+
+function updateDeleteButtonState() {
+  const deleteButton = document.querySelector(".delete-course");
+  if (!deleteButton || !gridApiFull) return;
+
+  const selectedRows = gridApiFull.getSelectedRows();
+  deleteButton.disabled = selectedRows.length === 0;
 }
 
 // ============================
@@ -128,7 +179,6 @@ function initFormHandler() {
         .querySelector('sl-textarea[label="Description"]')
         .value.trim(),
       type: form.querySelector('sl-select[label="Type"]').value.trim(),
-      icon: form.querySelector('sl-input[label="Icône"]').value.trim(),
       duration: form.querySelector('sl-input[label="Durée"]').value.trim(),
       link: form.querySelector('sl-input[label="Lien"]').value.trim(),
     };
@@ -163,4 +213,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initDrawerHandlers();
   loadInitialData();
   initFormHandler();
+  initDeleteHandler();
 });

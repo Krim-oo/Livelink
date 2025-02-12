@@ -65,12 +65,8 @@
         <sl-select class="label-on-left" label="Type">
           <sl-option value="offline">Présentiel</sl-option>
           <sl-option value="online">En ligne</sl-option>
+          <sl-option value="hybrid">Hybride</sl-option>
         </sl-select>
-        <sl-input
-          class="label-on-left"
-          label="Icône"
-          help-text="Nom du fichier icône (Ex: offline.png)"
-        ></sl-input>
         <sl-input
           class="label-on-left"
           label="Durée"
@@ -84,10 +80,10 @@
       </form>
 
       <!-- Boutons dans le footer -->
-      <sl-button class="" slot="footer" variant="primary" id="submit-course"
+      <sl-button class="mx-4" slot="footer" variant="primary" id="submit-course"
         >Ajouter</sl-button
       >
-      <sl-button slot="footer" variant="neutral" id="close-drawer"
+      <sl-button class="mx-4" slot="footer" variant="neutral" id="close-drawer"
         >Fermer</sl-button
       >
     </sl-drawer>
@@ -126,7 +122,10 @@
         </div>
 
         <!-- Groupe de boutons -->
-        <sl-button-group label="Example Button Group">
+        <sl-button-group label="Button Group">
+          <sl-button class="delete-course" disabled
+            >Supprimer la sélection</sl-button
+          >
           <sl-button class="add-course">Ajouter un cours</sl-button>
           <sl-button variant="primary">Enregistrer</sl-button>
           <sl-dropdown placement="bottom-end">
