@@ -15,43 +15,142 @@
     ></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style>
-      sl-tab-group::part(base),
-      sl-tab-group::part(body),
-      sl-tab-panel {
-        height: 100%;
+      .label-on-left {
+        --label-width: 6rem; /* Augmenté pour une meilleure lisibilité */
+        --gap-width: 1rem;
+      }
+
+      .label-on-left + .label-on-left {
+        margin-top: var(--sl-spacing-medium);
+      }
+
+      .label-on-left::part(form-control) {
+        display: grid;
+        grid: auto / var(--label-width) 1fr;
+        gap: var(--sl-spacing-3x-small) var(--gap-width);
+        align-items: center;
+      }
+
+      .label-on-left::part(form-control-label) {
+        text-align: right;
+      }
+
+      .label-on-left::part(form-control-help-text) {
+        grid-column-start: 2;
       }
     </style>
   </head>
   <body class="bg-gray-100 h-screen flex flex-col items-center p-6">
-    <!-- Tab Panel Centré -->
-    <sl-tab-group
-      class="h-full max-w-5xl w-full flex flex-col bg-white shadow-lg rounded-lg flex-grow"
+    <sl-drawer
+      label="Ajouter un cours"
+      class="drawer-overview"
+      placement="start"
     >
-      <sl-tab slot="nav" panel="general">Édition Complète</sl-tab>
-      <sl-tab slot="nav" panel="custom">Édition par Ligne</sl-tab>
-      <sl-tab slot="nav" panel="advanced">Avancé</sl-tab>
+      <form id="course-form">
+        <sl-input
+          class="label-on-left"
+          label="ID du cours"
+          help-text="Ex: COURSE-001"
+        ></sl-input>
+        <sl-input
+          class="label-on-left"
+          label="Titre du cours"
+          help-text="Entrez le nom du cours"
+        ></sl-input>
+        <sl-textarea
+          class="label-on-left"
+          label="Description"
+          help-text="Brève description du cours"
+        ></sl-textarea>
+        <sl-select class="label-on-left" label="Type">
+          <sl-option value="offline">Présentiel</sl-option>
+          <sl-option value="online">En ligne</sl-option>
+        </sl-select>
+        <sl-input
+          class="label-on-left"
+          label="Icône"
+          help-text="Nom du fichier icône (Ex: offline.png)"
+        ></sl-input>
+        <sl-input
+          class="label-on-left"
+          label="Durée"
+          help-text="Ex: 4 hours"
+        ></sl-input>
+        <sl-input
+          class="label-on-left"
+          label="Lien"
+          help-text="Lien ou identifiant du cours"
+        ></sl-input>
+      </form>
 
-      <!-- Mode édition complète -->
-      <sl-tab-panel name="general" class="px-4 h-full">
-        <div id="gridFullEdit" class="h-[32rem]"></div>
-      </sl-tab-panel>
+      <!-- Boutons dans le footer -->
+      <sl-button class="" slot="footer" variant="primary" id="submit-course"
+        >Ajouter</sl-button
+      >
+      <sl-button slot="footer" variant="neutral" id="close-drawer"
+        >Fermer</sl-button
+      >
+    </sl-drawer>
 
-      <!-- Mode édition par ligne -->
-      <sl-tab-panel name="custom" class="px-4 h-full">
-        <div id="gridRowEdit" class="h-[32rem]"></div>
-      </sl-tab-panel>
+    <!-- Conteneur Flexbox qui prend toute la hauteur -->
+    <div class="flex flex-col gap-2 h-[80vh] w-full max-w-5xl">
+      <!-- Premier élément prend 10% de la hauteur -->
+      <div
+        class="text-white p-4 rounded-lg flex items-center justify-between h-[10%] w-full"
+      >
+        <!-- Barre de recherche -->
+        <div
+          class="flex items-center gap-2 bg-white shadow-md rounded-lg p-2 w-[250px] h-10"
+        >
+          <svg
+            class="w-5 h-5 text-gray-400"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 21l-4.35-4.35m1.9-5.4a7.5 7.5 0 11-15 0 7.5 7.5 0 0115 0z"
+            ></path>
+          </svg>
+          <input
+            type="text"
+            id="filter-text-box"
+            class="w-full p-1 text-gray-700 bg-transparent border-none focus:outline-none"
+            placeholder="Rechercher..."
+            oninput="onFilterTextBoxChanged()"
+          />
+        </div>
 
-      <!-- Mode avancé (Placeholder pour ajout futur) -->
-      <sl-tab-panel name="advanced" class="px-4 h-full">
-        <h2 class="text-xl font-medium my-2">
-          Fonctionnalités Avancées (En cours de développement)
-        </h2>
-        <p class="text-gray-600">
-          Ajoutez ici d'autres fonctionnalités comme export CSV, filtres
-          avancés, etc.
-        </p>
-      </sl-tab-panel>
-    </sl-tab-group>
+        <!-- Groupe de boutons -->
+        <sl-button-group label="Example Button Group">
+          <sl-button class="add-course">Ajouter un cours</sl-button>
+          <sl-button variant="primary">Enregistrer</sl-button>
+          <sl-dropdown placement="bottom-end">
+            <sl-button slot="trigger" variant="primary" caret>
+              <sl-visually-hidden>More options</sl-visually-hidden>
+            </sl-button>
+            <sl-menu>
+              <sl-menu-item>Save</sl-menu-item>
+              <sl-menu-item>Save as&hellip;</sl-menu-item>
+              <sl-menu-item>Save all</sl-menu-item>
+            </sl-menu>
+          </sl-dropdown>
+        </sl-button-group>
+      </div>
+
+      <!-- Deuxième élément prend 90% de la hauteur -->
+      <div
+        id="gridFullEdit"
+        class="flex-1 w-full border rounded-lg shadow-lg overflow-hidden"
+      >
+        <!-- Contenu de la table -->
+      </div>
+    </div>
+
     <script src="../scripts/ag-grid.js"></script>
   </body>
 </html>
