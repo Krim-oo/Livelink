@@ -33,7 +33,7 @@
 
       // Simulation d'un appel AJAX pour récupérer le fichier JSON
       function fetchDeltaFromFile() {
-        return fetch("delta.json") // Charger le fichier JSON
+        return fetch("../delta.json") // Charger le fichier JSON
           .then((response) => {
             if (!response.ok) {
               throw new Error("Erreur lors du chargement du fichier Delta");

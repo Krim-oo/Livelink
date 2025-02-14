@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chart Builder</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/themes/light.css"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.19.1/cdn/shoelace-autoloader.js"
+    ></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"
+      integrity="sha512-ZwR1/gSZM3ai6vCdI+LVF1zSq/5HznD3ZSTk7kajkaj4D292NLuduDCO1c/NT8Id+jE58KYLKT7hXnbtryGmMg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      href="https://unpkg.com/filepond/dist/filepond.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    .label-on-left {
+      --label-width: 4.5rem;
+      --gap-width: 1rem;
+    }
+
+    .label-on-left + .label-on-left {
+      margin-top: var(--sl-spacing-medium);
+    }
+
+    .label-on-left::part(form-control) {
+      display: grid;
+      grid: auto / var(--label-width) 1fr;
+      gap: var(--sl-spacing-3x-small) var(--gap-width);
+      align-items: center;
+    }
+
+    .label-on-left::part(form-control-label) {
+      text-align: right;
+    }
+
+    .label-on-left::part(form-control-help-text) {
+      grid-column-start: 2;
+    }
+  </style>
+  <body class="h-screen bg-gray-100 p-6">
+    <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md">
+      <h1 class="text-2xl font-bold mb-6">Créer un Graphique</h1>
+
+      <!-- Formulaire -->
+      <form id="chartForm" class="space-y-4">
+        <!-- Sélecteur de type de graphique -->
+        <div>
+          <label for="chartType" class="block text-sm font-medium text-gray-700"
+            >Type de graphique</label
+          >
+          <select
+            id="chartType"
+            class="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+          >
+            <option value="bar">Barres</option>
+            <option value="line">Ligne</option>
+            <option value="pie">Camembert</option>
+            <option value="doughnut">Anneau</option>
+          </select>
+        </div>
+
+        <!-- FilePond pour l'upload de fichier -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-2"
+            >Téléverser un fichier de données (CSV)</label
+          >
+          <input type="file" id="fileUpload" class="mt-1" />
+        </div>
+
+        <!-- Color pickers pour les couleurs -->
+        <div>
+          <label
+            for="backgroundColor"
+            class="block text-sm font-medium text-gray-700"
+            >Couleur de fond</label
+          >
+          <input
+            type="color"
+            id="backgroundColor"
+            class="mt-1 block w-full p-1 border border-gray-300 rounded-md"
+            value="#4bc0c0"
+          />
+        </div>
+
+        <div>
+          <label
+            for="borderColor"
+            class="block text-sm font-medium text-gray-700"
+            >Couleur de la bordure</label
+          >
+          <input
+            type="color"
+            id="borderColor"
+            class="mt-1 block w-full p-1 border border-gray-300 rounded-md"
+            value="#4bc0c0"
+          />
+        </div>
+
+        <!-- Champ pour la largeur de la bordure -->
+        <div>
+          <label
+            for="borderWidth"
+            class="block text-sm font-medium text-gray-700"
+            >Largeur de la bordure</label
+          >
+          <input
+            type="number"
+            id="borderWidth"
+            class="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+            value="1"
+            min="0"
+            step="0.5"
+          />
+        </div>
+
+        <!-- Bouton pour générer le graphique -->
+        <button
+          type="submit"
+          class="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600"
+        >
+          Générer le Graphique
+        </button>
+      </form>
+
+      <!-- Canvas pour Chart.js -->
+      <div class="mt-8">
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
+    <script src="../scripts/chart.js"></script>
+  </body>
+</html>
